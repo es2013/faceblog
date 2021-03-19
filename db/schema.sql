@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS faceblog_db;
+
+CREATE DATABASE faceblog_db;
