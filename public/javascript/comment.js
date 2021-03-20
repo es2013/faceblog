@@ -6,7 +6,12 @@ async function commentFormHandler(event) {
     const post_id = window.location.toString().split('/')[
       window.location.toString().split('/').length - 1
     ];
+    console.log(comment_text);
     if (comment_text) {
+      console.log(JSON.stringify({
+        post_id,
+        comment_text
+      }));
         const response = await fetch('/api/comments', {
           method: 'POST',
           body: JSON.stringify({
@@ -18,6 +23,8 @@ async function commentFormHandler(event) {
           }
         });
       
+        console.log("RESPONSE");
+        console.log(response);
         if (response.ok) {
           document.location.reload();
         } else {
