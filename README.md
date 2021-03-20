@@ -18,9 +18,8 @@ SO THAT I can publish articles, blog posts, and my thoughts and opinions
 
 ## Data base models
 * Post
-* Category
 * Users
-* Votes
+* Comments
 
 ## Acceptance Criteria
 
