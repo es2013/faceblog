@@ -13,18 +13,22 @@
 <body>
   <div class="wrapper">
     <header>
-      <h1>
-        <a href="/">faceblog</a>
-      </h1>
       <nav class="navbar navbar-info">
         {{#if loggedIn}}
+        <h1>
+            <a href="/">faceblog</a>
+        </h1>
         <a class="navbar-brand" href="/dashboard">dashboard</a>
-        <a class="navbar-brand" href="/logout">logout</a>
+          <a class="navbar-brand" href="/logout">logout</a>
+
         {{!-- <button id="logout" class="btn-no-style">logout</button> --}}
         {{else}}
         <a href="/login">login</a>
         {{/if}}
       </nav>
+    <div class="username">Hi, {{ username }}!</div>
+
+      
     </header>
     <main>
       {{{ body }}}

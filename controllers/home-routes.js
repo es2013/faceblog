@@ -1,5 +1,6 @@
 //contanin all of the user-facing routes such as homepage and login page
 const router = require('express').Router();
+const session = require('express-session');
 const sequelize = require('../config/connection');
 const { Post, User, Comment } = require('../models');
 
@@ -28,13 +29,18 @@ router.get('/', (req, res) => {
   })
     .then(dbPostData => {
       console.log("RENDER PAGE");
-
       // pass a single post object into the homepage template
-      console.log(dbPostData);
+      console.log(req);
+      console.log(req.session);
       const posts = dbPostData.map(post => post.get({ plain: true }));
+      const response_body = { 
+        posts,
+        loggedIn: req.session.loggedIn,
+      }
       res.render('homepage', { 
         posts,
-        loggedIn: req.session.loggedIn
+        loggedIn: req.session.loggedIn,
+        username: req.session.username
       });
     })
     .catch(err => {
