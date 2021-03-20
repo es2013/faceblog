@@ -13,6 +13,7 @@ router.get('/', (req, res) => {
         attributes: [
             'id',
             'title',
+            'post_body',
             'created_at'],
         order: [['created_at', 'DESC']],
         include: [
@@ -45,6 +46,7 @@ router.get('/:id', (req, res) => {
         attributes: [
             'id',
             'title',
+            'post_body',
             'created_at'
         ],
         include: [
@@ -70,6 +72,7 @@ router.get('/:id', (req, res) => {
 router.post('/', (req, res) => {
     Post.create({
         title: req.body.title,
+        post_body: req.body.post_body,
         user_id: req.session.user_id
     })
         .then(dbPostData => res.json(dbPostData))
@@ -82,7 +85,8 @@ router.post('/', (req, res) => {
 router.put('/:id', (req, res) => {
     Post.update(
         {
-            title: req.body.title
+            title: req.body.title,
+            post_body: req.body.post_body  
         },
         {
             where: {

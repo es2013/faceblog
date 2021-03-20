@@ -4,7 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Just Tech News</title>
+  <title>Faceblog</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
@@ -14,13 +16,14 @@
       <h1>
         <a href="/">faceblog</a>
       </h1>
-      <nav>
+      <nav class="navbar navbar-info">
         <a href="/login">login</a>
       </nav>
-      <nav>
+      <nav class="navbar navbar-info">
         {{#if loggedIn}}
-        <a href="/dashboard">my dashboard</a>
-        <button id="logout" class="btn-no-style">logout</button>
+        <a class="navbar-brand" href="/dashboard">dashboard</a>
+        <a class="navbar-brand" href="/logout">logout</a>
+        {{!-- <button id="logout" class="btn-no-style">logout</button> --}}
         {{else}}
         <a href="/login">login</a>
         {{/if}}
@@ -29,7 +32,7 @@
     <main>
       {{{ body }}}
     </main>
-    <footer>
+    <footer class="blockquote-footer">
       2021 faceblog
     </footer>
   </div>
@@ -38,5 +41,4 @@
   {{/if}}
 
 </body>
-
 </html>

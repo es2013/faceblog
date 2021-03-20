@@ -23,6 +23,9 @@ Post.init(
         model: 'user',
         key: 'id'
       }
+    },
+    post_body:{
+      type: DataTypes.STRING 
     }
   },
   {
