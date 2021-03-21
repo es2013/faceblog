@@ -159,7 +159,9 @@ h2{
   .card-text.body {
     margin:15px;
   }
-
+div.body{
+  margin:20px;
+}
   .delete-post-btn {
     background-color: #d41414;
   }
