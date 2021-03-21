@@ -9,18 +9,22 @@
     font-family: sans-serif;
     color: #333;
   }
-  
+  header {
+    color:#fff
+  }
   a {
     text-decoration: none;
-    color: #225ca3;
+    color: #ffffff;
     font-weight: bold;
     transition: color .1s;
   }
   
   a:hover {
-    color: #3486eb;
+    color: #333;
   }
-  
+  nav {
+    border-bottom: 3px solid #333;
+  }
   button {
     background-color: #225ca3;
     border: 0;
@@ -90,7 +94,22 @@
     flex: 1;
     padding: 2% 4%;
   }
-  
+  .main-title{
+    font-size: 5vw;
+
+  }
+  .dashboard{
+    margin:20px;
+  }
+
+  textarea {
+    min-width: 90%;
+    min-height: 100px;
+}
+input {
+  width: 90%;
+}
+
   .btn-no-style {
     background: none;
     border: none;
@@ -107,6 +126,7 @@
   .btn-no-style:hover {
     background: none;
     color: #3486eb;
+    border-radius: 5px;
   }
   
   .delete-post-btn {
@@ -133,19 +153,17 @@
     margin: -1.5% 0 2% 0;
   }
   
-  .upvote-btn {
-    background-color: #197d0f;
-    transition: background-color .1s;
-  }
-  
-  .upvote-btn:hover {
-    background-color: #1f9c13;
-  }
-  
+  .navbar-fixed-top{
+  border-bottom: 10px solid#333;
+}
   .comment-form {
     margin-bottom: 5%;
   }
-  
+  .username{
+    color:#333;
+    font-style: italic;
+
+  }
   .comment {
     padding: 1%;
     margin-bottom: 1%;
@@ -162,7 +180,7 @@
   }
   
   .new-post-form input {
-    width: 300px;
+    width: 90%;
   }
   
   .edit-post-form {
@@ -170,7 +188,7 @@
   }
   
   footer {
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #333;
     display: flex;
     justify-content: center;
     padding: 1%;
