@@ -1,12 +1,12 @@
-<article class="post">
-  <div class="title">
+<article class="post card w-75">
+  <div class="card-header title">
    <p>{{title}}<p>
   </div>
-  <div class="body">
+  <div class="card-text body">
    <p>{{post_body}}<p>
   </div>
   <div class="meta">
-   Blog by {{user.username}} 
-    <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+   
+    <div class="card-footer"> By {{user.username}} <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a></div>
   </div>
 </article>

@@ -2,7 +2,7 @@
   <h2>Create New Blog Post</h2>
 
   <form class="new-post-form">
-    <div>
+    <div class="card-content">
       <label for="post-title">Title</label>
       <input type="text" id="post-title" name="post-title" />
     </div>
@@ -15,7 +15,6 @@
 </section>
 {{#if posts.length}}
 <section>
-  <h2>My Blog Posts</h2>
   <ol>
     {{#each posts as |post|}}
     <li>

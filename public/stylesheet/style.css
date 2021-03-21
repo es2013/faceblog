@@ -8,13 +8,20 @@
     margin: 0;
     font-family: sans-serif;
     color: #333;
+    background-color:#f2f2f2;
   }
   header {
     color:#fff
   }
-  a {
+  nav a {
     text-decoration: none;
     color: #ffffff;
+    font-weight: bold;
+    transition: color .1s;
+  }
+  a {
+    text-decoration: none;
+    color: #333;
     font-weight: bold;
     transition: color .1s;
   }
@@ -26,23 +33,26 @@
     border-bottom: 3px solid #333;
   }
   button {
-    background-color: #225ca3;
+    background-color: #0a4650;
     border: 0;
-    padding: 1%;
+    padding: 1% 5%;
     color: white;
     font-weight: bold;
     transition: background-color .1s;
     cursor: pointer;
     border-radius: 5px;
   }
+  article{
+    margin:auto;
+  }
   
   button:hover {
-    background-color: #3486eb;
+    background-color: #18a2b8;
   }
   
   .post-list {
-    margin: 0;
-    padding: 0;
+    margin: auto;
+    padding: auto;
   }
   
   textarea, input {
@@ -53,12 +63,13 @@
   
   textarea:focus, input:focus {
     outline: none;
-    border: 1px solid #3486eb;
+    border: 1px solid #010202;
   }
   
   textarea {
     min-width: 40%;
     min-height: 100px;
+    background-color:#e7f9fc
   }
   
   form > div {
@@ -100,18 +111,22 @@
   }
   .dashboard{
     margin:20px;
+    text-align: center;
   }
 
   textarea {
-    min-width: 90%;
+    min-width: 80%;
     min-height: 100px;
 }
 input {
-  width: 90%;
+  width: 80%;
 }
-
+h2{
+  color:#0a4650;
+}
   .btn-no-style {
     background: none;
+    border-radius: 5px;
     border: none;
     padding: 0;
     cursor: pointer;
@@ -122,13 +137,29 @@ input {
     transition: color .1s;
     margin-left: 16px;
   }
-  
+  .card-header{
+    color:#fff;
+    background-color:#0d5661;
+    font-size: 2vw;
+  }
+  .card-footer{
+    color:#333;
+    background-color:#c9c9c9;
+    font-size: 1em;
+  }
+  .timestamp{
+    font-size: 1vw;
+    text-align:right;
+  }
   .btn-no-style:hover {
     background: none;
     color: #3486eb;
     border-radius: 5px;
   }
-  
+  .card-text.body {
+    margin:15px;
+  }
+
   .delete-post-btn {
     background-color: #d41414;
   }
@@ -140,6 +171,7 @@ input {
   .post {
     margin-bottom: 2%;
     line-height: 150%;
+    margin-top: 2%;
   }
   
   .post .title span {
@@ -151,8 +183,15 @@ input {
   .edit-link {
     display: block;
     margin: -1.5% 0 2% 0;
+    color:#686868;
+    width:50%;
+    text-align: right;
+    margin:auto;
+
   }
-  
+  .comments{
+    color:#333;
+  }
   .navbar-fixed-top{
   border-bottom: 10px solid#333;
 }
@@ -170,17 +209,18 @@ input {
   }
   
   .comment:nth-child(odd) {
-    background-color: #fff5eb;
+    background-color: #e7f9fc;
   }
   
   .comment .meta {
-    font-size: 90%;
+    font-size: 80%;
     margin-bottom: .5%;
     opacity: .6;
   }
   
   .new-post-form input {
-    width: 90%;
+    width: 80%;
+    background-color: #e7f9fc;
   }
   
   .edit-post-form {

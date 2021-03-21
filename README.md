@@ -24,4 +24,6 @@ SO THAT I can publish articles, blog posts, and my thoughts and opinions
 ## Acceptance Criteria
 
 ## Usage
-![sample text](./img/img.png)
+![homepage](./img/homepage.png)
+![Create a New Blog](./img/sample-blog.png)
+![Dashboard](./img/dashboard.png)

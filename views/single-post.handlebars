@@ -1,13 +1,12 @@
-<article class="post">
-  <div class="title">
-    <p>{{post.title}}</p>
+<article class="post card">
+  <div class="title card-header">
+    <p>{{post.title}} <div class="timestamp">Posted on: {{post.created_at}}</div></p>
   </div>
   <div class="body">
     <p>{{post.post_body}}</p>
   </div>
-  <div class="meta">
-    Blog by {{post.user.username}} on
-    {{post.created_at}}
+  <div class="meta card-footer">
+    By {{post.user.username}}
     <a href="/post/{{post.id}}">{{post.comments.length}} comment(s)</a>
   </div>
 </article>
@@ -22,8 +21,6 @@
   </div>
 </form>
 {{/if}}
-
-<h1>Comments should be here</h1>
 {{>comments post.comments}}
 
 {{#if loggedIn}}
