@@ -27,3 +27,8 @@ SO THAT I can publish articles, blog posts, and my thoughts and opinions
 ![homepage](./img/homepage.png)
 ![Create a New Blog](./img/sample-blog.png)
 ![Dashboard](./img/dashboard.png)
+
+# Author
+[Github: es2013](https://github.com/es2013)
+
+[Deployed Link](https://git.heroku.com/faceblog-2021.git)
